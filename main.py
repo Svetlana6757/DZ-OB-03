@@ -17,3 +17,9 @@ class Bird(Animal):
         print(f"{self.name} поет чирик-чирик")
 
 
+class Mammal(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
+    def make_sound(self):
+        print(f"{self.name} лают, мяукают, мычат")
