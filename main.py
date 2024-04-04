@@ -49,4 +49,15 @@ class Zoo:
         self.staff.append(staff_member)
 
 
+class ZooKeeper:
+    def feed_animal(self, animal):
+        print(f"{animal.name} уже накормлен сотрудником.")
+
+
+class Veterinarian:
+    def heal_animal(self, animal):
+        print(f"{animal.name} уже вылечен ветеринаром.")
+
+
+```
 
