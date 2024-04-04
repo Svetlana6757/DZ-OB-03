@@ -59,5 +59,12 @@ class Veterinarian:
         print(f"{animal.name} уже вылечен ветеринаром.")
 
 
-```
+import pickle
 
+def save_zoo(zoo, filename):
+    with open(filename, 'wb') as file:
+        pickle.dump(zoo, file)
+
+def load_zoo(filename):
+    with open(filename, 'rb') as file:
+        return pickle.load(file)
