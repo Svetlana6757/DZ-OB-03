@@ -23,3 +23,13 @@ class Mammal(Animal):
 
     def make_sound(self):
         print(f"{self.name} лают, мяукают, мычат")
+
+
+class Reptile(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
+    def make_sound(self):
+        print(f"{self.name} шипят")
+
+
