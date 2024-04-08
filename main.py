@@ -3,8 +3,8 @@ class Animal:
         self.name = name
         self.age = age
 
-
     def make_sound(self):
+        pass
 
     def eat(self):
         print(f"{self.name} сейчас ест.")
@@ -59,6 +59,24 @@ class Veterinarian:
     def heal_animal(self, animal):
         print(f"{animal.name} уже вылечен ветеринаром.")
 
+bird1 = Bird("Орел",5)
+mammal1 = Mammal("Тигр", 6)
+reptile1 = Reptile("Питон", 20)
+
+zoo = Zoo()
+keeper = ZooKeeper()
+veterinarian = Veterinarian()
+
+zoo.add_animal(bird1)
+zoo.add_animal(mammal1)
+zoo.add_animal(reptile1)
+zoo.add_staff(keeper)
+zoo.add_staff(veterinarian)
+
+animal_sound(zoo.animals)
+
+keeper.feed_animal(mammal1)
+veterinarian.heal_animal(reptile1)
 
 import pickle
 
