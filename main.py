@@ -44,10 +44,11 @@ class Zoo:
 
     def add_animal(self, animal):
         self.animals.append(animal)
+        print(f"Животное {animal} добавлен в зоопарк")
 
     def add_staff(self, staff_member):
         self.staff.append(staff_member)
-
+        print(f"Сотрудник {staff_member} добавлен в зоопарк")
 
 class ZooKeeper:
     def feed_animal(self, animal):
